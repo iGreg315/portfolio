@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>GBMM | About Me</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="carousel.css" rel="stylesheet" type="text/css">
+        <link href="masonry.css" rel="stylesheet" type="text/css">
+        
+        <script src="https://use.typekit.net/zjy4mft.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <script src="https://use.fontawesome.com/4b7c7e1663.js"></script>
+        
+        <style>
+            
+            #footerNav {
+                grid-template-columns: 100%;
+                text-align: center;
+            }
+            
+            #content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #fff;
+            }
+            
+            .contactbutton{
+                font-size: 2em;
+                padding: 1em;
+                width: 70%;
+                text-align: center;
+                background: #fff;
+                border: #d5dc21;
+                color: #d5dc21;
+                border: 2px solid #d5dc21;
+                border-radius: .25rem;
+            }
+            
+            .contactbutton:hover {
+                background: #d5dc21;
+                color: #fff;
+            }
+            
+            .contactbutton a:hover {
+                color: #fff;
+            }
+            
+            .contactbutton a {
+                color: #d5dc21;
+            }
+            
+            .contactbutton:first-child {
+                margin-bottom: 1em;
+            }
+            
+            
+        @media (min-width: 800px){
+            
+            .contactbutton {
+                border: none;
+                border-radius: 0px;
+                
+            }
+            
+            .contactbutton:hover {
+                background: none;
+            }
+            
+            .contactbutton a:hover {
+                color: #d5dc21;
+            }
+            
+            
+            .contactbutton:first-child {
+                margin-bottom: .5em;
+                border-bottom: 2px solid #d5dc21;
+            }
+        }
+            
+            
+        </style>
+
+	</head>
+
+	<body>
+        
+        <div id="lightbox">
+        <i id="lbclose" class="fa fa-close"></i>
+        <img id="lightboxImg" src="" />
+        </div> 
+        
+        <div id="header">
+            <div id="headerContent">
+            <h1 class="internalh1">Contact Me</h1>
+            <!-- <h2 class="internalh2">Shia LaBeouf is my spirit animal.</h2>-->
+            </div>
+            
+        </div>
+
+        <div id="content">
+            <div class="contactbutton"><a href="tel:+18014715593">801.471.5593</a></div>
+            <div class="contactbutton"><a href="mailto:greg.315@me.com">greg.315@me.com</a></div>
+
+        </div>
+        
+        <div id="footerNav">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+        </div>
+	</body>
+</html>
+
+<script src="offsetcontent.js"></script>
+<script src="lightbox.js"></script>
+<!--<script src="script.js"></script>-->
+

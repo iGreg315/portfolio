@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Greg Benson</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="masonry.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        
+        <script src="https://use.typekit.net/zjy4mft.js"></script>
+        
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+        <script src="https://use.fontawesome.com/4b7c7e1663.js"></script>
+        
+        <style>
+            
+            h1 {
+                font-family: 'Minion Pro', serif;
+                color: #555 !important;
+                background: #fff871;
+                font-weight: 400 !important;
+            }
+            
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                
+            }
+            
+            #content {
+                padding-top: 1em;
+                background: #fff !important;
+            }
+        
+            .masonry {
+                background: #fff;
+            }
+            
+            @media (min-width: 800px){
+                .masonry {
+                    column-count: 1 !important;
+                }
+                
+                h2 {
+                    column-count: 3;
+                    text-align: justify;
+                }
+            }
+            
+            .brick {
+                box-shadow: 0 0px 2px 0 rgba(00,00,00,.2);
+            }
+            
+        </style>
+        
+	</head>
+
+	<body onload="offsetContent()">
+        
+        <div id="lightbox">
+        <i id="lbclose" class="fa fa-close"></i>
+        <img id="lightboxImg" src="" />
+        </div> 
+        
+        <div id="header">
+            <div id="headerContent">
+            
+            <h1 class="internalh1">Highlights</h1>
+            <h2 class="internalh2">Necessity is the mother of invention. The idea for this app was born from my recurring need for something like it to exist, and being unable to find anything satisfactory. I have the whole thing designed, I just need a developer who is in a position to work for nothing more than the agreement that we'll split the profits 50/50 if and when they come. Please let me know if you know such a person.</h2>
+            </div>
+            
+        </div>
+
+        <div id="content">
+            
+        <div class="masonry">
+                
+                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl1.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl2.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl3.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl4.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl5.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl6.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl7.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl8.jpg" /></div>
+             <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Highlights App" src="images/highlights/hl9.jpg" /></div>
+                
+                
+                  
+                
+                
+            </div>
+      
+        </div>
+        
+        <div id="footerNav">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="contact.html" id="footercontact">CONTACT ME</a>
+        </div>
+	</body>
+</html>
+
+    <script src="offsetcontent.js"></script>
+    <script src="lightbox.js"></script>
+
+
