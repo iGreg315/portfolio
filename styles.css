@@ -112,7 +112,7 @@ body {
     box-shadow: 0 -2px 2px -2px rgba(00,00,00,.2);
 }
 
-#footerNav i.fa-home {
+#footerNav i.fa-angle-left {
       display: flex;
     padding: .75rem;
     flex-direction: column;
