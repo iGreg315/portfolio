@@ -9,12 +9,11 @@
 .masonry {
     width: 100%;
     column-count: 1;
-    column-gap: 0;
+    column-gap: 0px;
     text-align: center;
-      
-    
+
 }
-l
+
 @media (min-width: 800px) {
     .masonry{
         column-count: 2;
@@ -31,7 +30,7 @@ l
     display: inline-block;
     width: 97%;
     border-bottom: 1px solid #efefef;
-    
+ 
 }
 
 .brick:hover {
