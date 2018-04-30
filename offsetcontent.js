@@ -8,7 +8,7 @@ var footerHeight = document.getElementById("footerNav").clientHeight;
             console.log(headerHeight);
             console.log(footerHeight);
             
-            content.style.marginTop = headerHeight + "px";
+            content.style.marginTop = (headerHeight) + "px";
             
             content.style.marginBottom = (footerHeight + 15) + "px";
         }

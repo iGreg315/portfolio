@@ -68,7 +68,6 @@ body {
 
 #homeheader {
     margin-top: 3%;
-    padding: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -104,12 +103,12 @@ body {
     
 
 #header {
-    padding: 1rem;
     background: #fff;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 2px -2px rgba(00,00,00,.2);
+    border-bottom: 1px solid #efefef;
+/*    box-shadow: 0 2px 2px -2px rgba(00,00,00,.2);*/
 }
     
     @media (min-width: 640px){
@@ -121,8 +120,10 @@ body {
         
         #header {
             width: 75%;
-            padding: 2rem 0;
-       
+            padding: 2rem 0 0 0;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        border-bottom: 1px solid #efefef;
         }
     }
 
@@ -133,6 +134,16 @@ body {
 
 /* HEADER CONTENT */
 
+#headerContent {
+    padding: 1.2em;
+}
+
+@media (min-width: 640px){
+    #headerContent {
+        padding: 0 0 1em 0;
+    }
+}
+
 #thisis {
     font-weight: 700;
     font-size: 1.8rem;
@@ -140,6 +151,7 @@ body {
     line-height: .9em;
     color: #86883A;
     font-size: 3.5rem;
+    margin-top: -1rem;
   
 }
 
@@ -171,18 +183,21 @@ body {
     }
 
 .internalh1 {
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: -.03em;
     color: #86883A;
+    margin-top: .15em;
+    line-height: .8em;
 }
 
 .internalh2 {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     line-height: 1.2rem;
     font-size: .9rem;
     font-weight: 400;
-    color: #999; 
+    color: #555; 
 }
 
     @media (min-width: 640px){
@@ -192,21 +207,26 @@ body {
         }
         
         .internalh2 {
-            margin-top: 1.5rem;
-            font-size: 1rem;
-            font-weight: 100;
+            margin-top: 1em;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
         }
         
             
     }
 
-    @media (min-width: 800px){
-            .internalh1 {
-                font-size: 5rem;
-            }
-
-        
+@media (min-width: 768px){
+    .internalh1{
+        font-size: 4em
     }
+    
+    .internalh2 {
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+}
+
+
 
 
 /* NAV */
@@ -229,9 +249,16 @@ body {
 }
 
 .dropdown > span {
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: inherit;
     font-weight: 700;
+    margin-right: .5em
+}
+
+@media (min-width: 1024px){
+    .dropdown > span {
+        margin-right: 0px;
+    }
 }
 
 @media (min-width: 800px){
@@ -245,6 +272,12 @@ body {
 @media (min-width: 1024px){
     #nav {
         width: 40%;
+    }
+}
+
+@media (min-width: 1200px){
+    #nav {
+        width: 45%;
     }
 }
 
@@ -276,7 +309,7 @@ body {
 }
 
 .nav1 h3{
-    font-size: 1.3rem;
+    font-size: 2.25rem;
     padding: 1.2rem;
     font-weight: 700;
    
@@ -324,7 +357,7 @@ h3 a:visited {
     }
     
     .nav1 h3{
-        padding: .66em 0;
+        padding: .8em 0;
         border: none;
     }
     
@@ -355,6 +388,14 @@ h3 a:visited {
     padding: .75em 0;
     width: 100%;
 }
+
+@media (min-width: 640px){
+    .nav2opt {
+        font-size: 1.4rem;
+        line-height: 1.5em
+    }
+}
+
 .nav2opt:first-child{
     border-top: none;
 }
@@ -375,7 +416,7 @@ h3 a:visited {
     }
     
     .nav2 a {
-        padding-left: 1rem;
+        padding-left: 2.5rem;
     }
     
     .nav2opt {
@@ -422,21 +463,22 @@ h3 a:visited {
     right: 0;
     left: 0;
     width: 100%;
-    background: rgba(55,55,55,.9);
+    background: rgba(250,250,250,.9);
     display: none;
 }
 
 #lightbox img{
     max-height: 90%;
     max-width: 90%;
-    box-shadow: 0 0 15px -4px #333;
+    box-shadow: 0 0 5px -1px rgba(00,00,00,.33);
+    border-radius: 5px;
 }
 
 #lightbox .fa-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    color: #fff;
+    color: #555;
     font-size: 1.5rem;
 }
 
@@ -529,7 +571,8 @@ em {
     bottom: 0;
     margin: 0 auto;
     background: #fff;
-    box-shadow: 0 -2px 2px -2px rgba(00,00,00,.2);
+    border-top: 1px solid #efefef;
+/*    box-shadow: 0 -2px 2px -2px rgba(00,00,00,.2);*/
 }
 
 #footerNav i.fa-angle-left {
@@ -558,5 +601,7 @@ em {
 @media (min-width: 640px){
     #footerNav {
         width: 75%;
+        border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
     }
 }

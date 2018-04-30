@@ -49,18 +49,18 @@ VDnav.addEventListener("click", dropdown3);
 
 //
 
-var PNnav = document.getElementById("passion_nav");
-var PNdd = document.getElementById("passion_list");
-
-PNdd.style.display='none';
-
-function dropdown4() {
-    PNdd.style.display === "none" ?
-    PNdd.style.display = "block" :
-    PNdd.style.display = "none";
-}
-
-PNnav.addEventListener("click", dropdown4);
+//var PNnav = document.getElementById("passion_nav");
+//var PNdd = document.getElementById("passion_list");
+//
+//PNdd.style.display='none';
+//
+//function dropdown4() {
+//    PNdd.style.display === "none" ?
+//    PNdd.style.display = "block" :
+//    PNdd.style.display = "none";
+//}
+//
+//PNnav.addEventListener("click", dropdown4);
 
 //
 
