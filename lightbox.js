@@ -72,6 +72,15 @@ const pics = {
         'images/photography/headshots/portraitMom.jpg',
         'images/photography/headshots/portraitSam.jpg',
         'images/photography/headshots/portraitSarah1.jpg'
+    ],
+    INFO_PICS: [
+        'images/graphic/info/InfoBrennonBC.jpg',
+        'images/graphic/info/InfoEDGE_DesignTimeline.jpg',
+        'images/graphic/info/InfoEDGE_Herriman.jpg',
+        'images/graphic/info/InfoEDGE_Locations.jpg',
+        'images/graphic/info/InfoEDGE_PreviewTour.jpg',
+        'images/graphic/info/InfoEDGE_SpringCleaning.jpg',
+        'images/graphic/info/InfoWellnessPyramid.jpg'
     ]
 }
 
@@ -100,10 +109,10 @@ function next() {
     loop()
     lbImg.setAttribute("src", pics[currtype][curridx]);
 }
-function loop(){
-    if (curridx > pics[currtype].length - 1){
+function loop() {
+    if (curridx > pics[currtype].length - 1) {
         curridx = 0
-    } else if (curridx < 0){
+    } else if (curridx < 0) {
         curridx = pics[currtype].length - 1
     }
 }
