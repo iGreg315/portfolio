@@ -80,7 +80,6 @@ var lbImg = document.getElementById("lightboxImg");
 
 var currtype
 var curridx
-console.log(lightbox)
 
 function setSrc(thisimg, type) {
     currtype = type
@@ -89,21 +88,16 @@ function setSrc(thisimg, type) {
     lightbox.style.display = "flex";
 }
 function close() {
-    console.log('close')
     lightbox.style.display = "none";
 }
 function prev() {
-    console.log('next')
     --curridx
     loop()
-    console.log(curridx)
     lbImg.setAttribute("src", pics[currtype][curridx])
 }
 function next() {
-    console.log('prev')
     ++curridx
     loop()
-    console.log(curridx)
     lbImg.setAttribute("src", pics[currtype][curridx]);
 }
 function loop(){
