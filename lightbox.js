@@ -1,5 +1,21 @@
 // LIGHTBOX
 const pics = {
+    LOGOS_PICS: [
+        'images/graphic/logos/DCMOFabozzi.jpg',
+        'images/graphic/logos/DCMOLegendary.jpg',
+        'images/graphic/logos/DCMOMidlothean.jpg',
+        'images/graphic/logos/DCMOTurnagain.jpg',
+        'images/graphic/logos/DCMOWhiting.jpg',
+        'images/graphic/logos/LogosDC.jpg',
+        'images/graphic/logos/LogosDD.jpg',
+        'images/graphic/logos/LogosDROPS.jpg',
+        'images/graphic/logos/LogosFnB.jpg',
+        'images/graphic/logos/LogosMF.jpg',
+        'images/graphic/logos/LogosNONAIM.jpg',
+        'images/graphic/logos/LogosTC.jpg',
+        'images/graphic/logos/LogosURMC.jpg',
+        'images/graphic/logos/LogosWWE.jpg'
+    ],
     ADS_PICS: [
         'images/graphic/ads/AdsAshley1.png',
         'images/graphic/ads/AdsBarber.jpg',
@@ -61,34 +77,39 @@ const pics = {
 
 var lightbox = document.getElementById("lightbox");
 var lbImg = document.getElementById("lightboxImg");
-var lbclose = document.getElementById("lbclose");
-var bricks = Array.of(document.getElementsByClassName('brickImg'))
-var next = document.getElementById('lightbox-next');
-var prev = document.getElementById('lightbox-prev');
 
-var currimg
+var currtype
 var curridx
+console.log(lightbox)
 
 function setSrc(thisimg, type) {
-    curridx = pics[type].indexOf(thisimg.getAttribute('src'))
-    lbImg.setAttribute("src", pics[type][curridx]);
+    currtype = type
+    curridx = pics[currtype].indexOf(thisimg.getAttribute('src'))
+    lbImg.setAttribute("src", pics[currtype][curridx]);
     lightbox.style.display = "flex";
 }
-
-bricks.forEach(brick => {
-    brick.addEventListener('click', setSrc(brick, brick.getAttribute('src')))
-})
-
-lbclose.addEventListener('click', function(){
+function close() {
+    console.log('close')
     lightbox.style.display = "none";
-})
-next.addEventListener('click', function (){
+}
+function prev() {
     console.log('next')
-    ++curridx
-    lbImg.setAttribute("src", pics[type][curridx])
-})
-prev.addEventListener('click', function (){
-    console.log('prev')
     --curridx
-    lbImg.setAttribute("src", pics[type][curridx]);
-})
+    loop()
+    console.log(curridx)
+    lbImg.setAttribute("src", pics[currtype][curridx])
+}
+function next() {
+    console.log('prev')
+    ++curridx
+    loop()
+    console.log(curridx)
+    lbImg.setAttribute("src", pics[currtype][curridx]);
+}
+function loop(){
+    if (curridx > pics[currtype].length - 1){
+        curridx = 0
+    } else if (curridx < 0){
+        curridx = pics[currtype].length - 1
+    }
+}

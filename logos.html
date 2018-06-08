@@ -26,10 +26,27 @@
 
 	<body onload="offsetContent()">
         
-        <div id="lightbox">
-        <i id="lbclose" class="fa fa-close"></i>
-        <img id="lightboxImg" src="" />
-        </div> 
+        <div id="lightbox" style="z-index: 4;">
+        
+            <a href="javascript:close()">
+                <i class="fa fa-close"></i>
+            </a>
+        
+        
+        
+        
+            <img id="lightboxImg" src="" />
+        
+            <div class="lbnav" style="position: absolute; bottom: 0; display: flex; justify-content: space-between; width: 200px; margin-bottom: 20px;">
+                <a href="javascript:prev()">
+                    <i class='fa fa-chevron-left'></i>
+                </a>
+                <a href="javascript:next()">
+                    <i class='fa fa-chevron-right'></i>
+                </a>
+            </div>
+        
+        </div>
         
         <div id="header">
             <div id="headerContent">
@@ -44,20 +61,20 @@
             
         <div class="masonry">
                 
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosFnB.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 1" src="images/graphic/logos/LogosNONAIM.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Lsogo Design 2" src="images/graphic/logos/DCMOTurnagain.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 3" src="images/graphic/logos/LogosDC.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 4" src="images/graphic/logos/DCMOLegendary.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 5" src="images/graphic/logos/LogosWWE.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 6" src="images/graphic/logos/LogosDD.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 7" src="images/graphic/logos/DCMOMidlothean.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosTC.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 8" src="images/graphic/logos/LogosURMC.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 9" src="images/graphic/logos/DCMOWhiting.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 10" src="images/graphic/logos/LogosMF.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 11" src="images/graphic/logos/DCMOFabozzi.jpg" /></div>
-                <div class="brick"><img onclick="setSrc(this)" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosDROPS.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosFnB.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 1" src="images/graphic/logos/LogosNONAIM.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Lsogo Design 2" src="images/graphic/logos/DCMOTurnagain.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 3" src="images/graphic/logos/LogosDC.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 4" src="images/graphic/logos/DCMOLegendary.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 5" src="images/graphic/logos/LogosWWE.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 6" src="images/graphic/logos/LogosDD.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 7" src="images/graphic/logos/DCMOMidlothean.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosTC.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 8" src="images/graphic/logos/LogosURMC.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 9" src="images/graphic/logos/DCMOWhiting.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 10" src="images/graphic/logos/LogosMF.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 11" src="images/graphic/logos/DCMOFabozzi.jpg" /></div>
+                <div class="brick"><img onclick="setSrc(this, 'LOGOS_PICS')" class="brickImg" alt="Greg Benson Multimedia Logo Design 12" src="images/graphic/logos/LogosDROPS.jpg" /></div>
                 
                 
                 

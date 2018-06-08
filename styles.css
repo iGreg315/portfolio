@@ -26,6 +26,7 @@ time, mark, audio, video {
 a {
     font-style: none;
     text-decoration: none;
+    color: inherit
 }
 
 
@@ -103,7 +104,7 @@ body {
     
 
 #header {
-    z-index: 999;
+    z-index: 3;
     background: #fff;
     position: fixed;
     top: 0;
@@ -461,7 +462,7 @@ h3 a:visited {
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     position: fixed;
     top: 0;
@@ -474,6 +475,7 @@ h3 a:visited {
 }
 
 #lightbox img{
+    margin-top: 20px;
     max-height: 90%;
     max-width: 90%;
     box-shadow: 0 0 5px -1px rgba(00,00,00,.33);
@@ -510,7 +512,6 @@ h3 a:visited {
 }
 
 .wordycontent{
-    margin-top: ;
     background: #fff !important;
     width: 90%;
     
