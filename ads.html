@@ -1,80 +1,132 @@
 <!doctype html>
 
 <html>
-	<head>
-		<title>GBMM | Ad Design</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1.0">
-        
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link href="carousel.css" rel="stylesheet" type="text/css">
-        <link href="masonry.css" rel="stylesheet" type="text/css">
-        
-       <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
-        <script src="https://use.fontawesome.com/4b7c7e1663.js"></script>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#86883a">
-        <meta name="msapplication-TileColor" content="#86883a">
-        <meta name="theme-color" content="#ffffff">
 
-	</head>
-    
-    
+<head>
+    <title>GBMM | Ad Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
 
-	<body onload="offsetContent()">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="carousel.css" rel="stylesheet" type="text/css">
+    <link href="masonry.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4b7c7e1663.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#86883a">
+    <meta name="msapplication-TileColor" content="#86883a">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+
+<body onload="offsetContent()">
+
+    <div id="lightbox" style="z-index: 4;">
         
-        <div id="lightbox">
-        <i id="lbclose" class="fa fa-close"></i>
-        <i id='lightbox-prev' class='fa fa-chevron-left'></i>
+        <a href="javascript:close()"><i class="fa fa-close"></i></a>
+        
+        
+        
+        
         <img id="lightboxImg" src="" />
-        <i id='lightbox-next' class='fa fa-chevron-right'></i>
-        </div> 
-        <div id="header">
-            <div id="headerContent">
-            
-            <h1 class="internalh1">Ad Design</h1>
-            <h2 class="internalh2">Good design sells. In this increasingly bright and busy world, many of us have learned to "tune out" advertisements, presenting us designers with a unique and exciting challenge: to cut through the noise and capture someone's attention.</h2>
-            </div>
-            
+        
+        <div class="lbnav">
+            <a href="javascript:prev()">
+                <i class='fa fa-chevron-left'></i>
+            </a>
+            <a href="javascript:next()">
+                <i class='fa fa-chevron-right'></i>
+            </a>
         </div>
         
-        
+    </div>
+    <div id="header">
+        <div id="headerContent">
 
-        <div id="content">
-            
-            
-            
+            <h1 class="internalh1">Ad Design</h1>
+            <h2 class="internalh2">Good design sells. In this increasingly bright and busy world, many of us have learned to "tune out" advertisements,
+                presenting us designers with a unique and exciting challenge: to cut through the noise and capture someone's
+                attention.</h2>
+        </div>
+
+    </div>
+
+
+
+    <div id="content">
+
+
+
         <div class="masonry">
-            <div class="brick"><img class="brickImg ADS_PICS" src="images/graphic/ads/AdsAshley1.png" alt="Greg Benson Multimedia Ad Design" /></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsBarber.jpg" alt="Greg Benson Multimedia Ad Design 1" /></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE1.jpg" alt="Greg Benson Multimedia Ad Design 2" /></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE2.jpg" alt="Greg Benson Multimedia Ad Design 3" /></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE3.jpg" />
+            <div class="brick">
+                <img class="brickImg" onclick="setSrc(this, 'ADS_PICS')" src="images/graphic/ads/AdsAshley1.png" alt="Greg Benson Multimedia Ad Design"
+                />
             </div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA3.jpg" alt="Greg Benson Multimedia Ad Design 4" /></div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsBarber.jpg" alt="Greg Benson Multimedia Ad Design 1"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE1.jpg" alt="Greg Benson Multimedia Ad Design 2"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE2.jpg" alt="Greg Benson Multimedia Ad Design 3"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsEDGE3.jpg" />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA3.jpg" alt="Greg Benson Multimedia Ad Design 4"
+                />
+            </div>
             <div></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA1.jpg" alt="Greg Benson Multimedia Ad 5"/></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA2.jpg" alt="Greg Benson Multimedia Ad 6"/></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA4.jpg" alt="Greg Benson Multimedia Ad 7"/></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA5.jpg" alt="Greg Benson Multimedia Ad 8"/></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA6.jpg" alt="Greg Benson Multimedia Ad 9"/></div>
-            <div class="brick"><img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsThane.jpg" alt="Greg Benson Multimedia Ad 10"/></div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA1.jpg" alt="Greg Benson Multimedia Ad 5"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA2.jpg" alt="Greg Benson Multimedia Ad 6"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA4.jpg" alt="Greg Benson Multimedia Ad 7"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA5.jpg" alt="Greg Benson Multimedia Ad 8"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsUVUSA6.jpg" alt="Greg Benson Multimedia Ad 9"
+                />
+            </div>
+            <div class="brick">
+                <img onclick="setSrc(this, 'ADS_PICS')" class="brickImg" src="images/graphic/ads/AdsThane.jpg" alt="Greg Benson Multimedia Ad 10"
+                />
+            </div>
         </div>
-      
-        </div>
-        
-        <div id="footerNav">
-            <a href="index.html"><i class="fa fa-angle-left"></i></a>
-            <a href="contact.html" id="footercontact">CONTACT ME</a>
-        </div>
-	</body>
+
+    </div>
+
+    <div id="footerNav">
+        <a href="index.html">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a href="contact.html" id="footercontact">CONTACT ME</a>
+    </div>
+</body>
+
 </html>
 
 <script src="offsetcontent.js"></script>
 <script src="lightbox.js"></script>
 <!--<script src="script.js"></script>-->
-
